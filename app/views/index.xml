@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container">
+		<Label id="label">Base Window</Label>
+	</Window>
+</Alloy>
