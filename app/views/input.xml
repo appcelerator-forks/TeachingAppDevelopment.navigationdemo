@@ -1,0 +1,13 @@
+<Alloy>
+	<Window>
+		<View>
+			<Label id="lblQuestion"></Label>
+		</View>
+		<View>
+			<TextField id="tfAnswer"></TextField>
+		</View>
+		<View>
+			<Button>Send Answer</Button>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,19 @@
+"Window": {
+	backgroundColor:"white",
+	layout: "vertical"
+},
+"View": {
+	width: "90%",
+	height: Titanium.UI.SIZE,
+	left: "5%",
+	top:"5%"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 18
+	}
+}
+

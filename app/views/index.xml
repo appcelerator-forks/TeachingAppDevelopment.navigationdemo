@@ -1,5 +1,17 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label">Base Window</Label>
+	<Window>
+		<View>
+			<Label>Base Window</Label>	
+		</View>
+		<View>
+			<TextField id="tfQuestion" hintText="What is the question?" />
+		</View>
+		<View>
+			<Button>Ask the Question</Button>	
+		</View>
+		<View>
+			<Label>The answer is:</Label>
+			<Label id="lblAnswer"></Label>
+		</View>
 	</Window>
 </Alloy>
