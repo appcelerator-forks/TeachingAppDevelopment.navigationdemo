@@ -4,10 +4,10 @@
 			<Label id="lblQuestion"></Label>
 		</View>
 		<View>
-			<TextField id="tfAnswer"></TextField>
+			<TextField id="tfAnswer" hintText="The answer goes here"></TextField>
 		</View>
 		<View>
-			<Button>Send Answer</Button>
+			<Button onClick="doClickAnswer">Send Answer</Button>
 		</View>
 	</Window>
 </Alloy>

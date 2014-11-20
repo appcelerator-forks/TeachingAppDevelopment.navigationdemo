@@ -7,7 +7,7 @@
 			<TextField id="tfQuestion" hintText="What is the question?" />
 		</View>
 		<View>
-			<Button>Ask the Question</Button>	
+			<Button onClick="doClickAsk">Ask the Question</Button>	
 		</View>
 		<View>
 			<Label>The answer is:</Label>

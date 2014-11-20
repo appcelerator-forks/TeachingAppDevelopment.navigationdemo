@@ -3,6 +3,7 @@
 	layout: "vertical"
 },
 "View": {
+	layout: "vertical",
 	width: "90%",
 	height: Titanium.UI.SIZE,
 	left: "5%",
