@@ -1,15 +1,17 @@
 var args = arguments[0] || {};
-Ti.API.info("The question is: "+ args.question);
 
 $.lblQuestion.text = args.question;
-//$.tfAnswer.focus();
 
+/*************** EVENT **********************************/
+function doClickAnswerEvent(e){
+	// the event if fired on this window, but the eventhandler is defined on the 'parent' and therefor executes there, pretty 1337 approach IMO
+	$.input.fireEvent("return", {answer: $.tfAnswer.value});
+	$.input.close();
+}
 
-/*************** EVENT HANDLERS ******************/
-function doClickAnswer(e){
-	//Ti.API.info("Alloy.Globals.lblAnswer: " + Alloy.Globals.lblAnswer);
-	//Ti.API.info("Alloy.Globals.lblAnswer apiname: " + Alloy.Globals.lblAnswer.getApiName());
-	//Ti.API.info();
+/*************** DIRECT GLOBAL ACCESS ****************/
+function doClickAnswerDirect(e){
+	// Accessing 'parent' elements directly through Global namespace, not very elegant
 	Alloy.Globals.lblAnswer.text = $.tfAnswer.value;
 	$.input.close();	
 }
