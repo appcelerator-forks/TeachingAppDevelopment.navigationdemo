@@ -4,7 +4,7 @@ $.lblQuestion.text = args.question;
 
 /*************** EVENT **********************************/
 function doClickAnswerEvent(e){
-	// the event if fired on this window, but the eventhandler is defined on the 'parent' and therefor executes there, pretty 1337 approach IMO
+	// the event if fired on this window, but the eventhandler is defined on the 'parent' and therefore executes there, pretty 1337 approach IMO
 	$.input.fireEvent("return", {answer: $.tfAnswer.value});
 	$.input.close();
 }

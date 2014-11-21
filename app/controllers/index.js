@@ -1,9 +1,10 @@
 
 $.index.open();
 
+
 /*************** EVENT **********************************/
 function doClickAskEvent(e){
-		var args = {
+	var args = {
 		question: $.tfQuestion.value
 	};
 	var newwin = Alloy.createController("input",args).getView();
@@ -11,7 +12,6 @@ function doClickAskEvent(e){
 		$.lblAnswer.text = e.answer;
 	});
 	newwin.open();	
-	
 }
 
 /*************** DIRECT GLOBAL ACCESS ****************/
